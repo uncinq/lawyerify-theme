@@ -1,4 +1,6 @@
 admin:
+  blocks:
+    selectedplaces: Sélection de cabinets
   collections:
     persons_places:
       label: 

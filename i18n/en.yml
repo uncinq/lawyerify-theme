@@ -3,17 +3,19 @@ admin:
     selectedplaces: Selected offices
   collections:
     places:
-      label: Offices
-      label_singular: Office
-      description: All offices
+      _description: All offices
+      label:
+        one: Office
+        other: Offices
     realestates_persons:
       label:
         one: Responsible person
         other: Responsible persons
     realestates_sellers:
-      label: Types of sales
-      label_singular: Type of sale
-      description: All types of sales
+      _description: All types of sales
+      label: 
+        one: Type of sales
+        other: Types of sales
   fields:
     places_items: Offices
     place: Office
@@ -22,7 +24,10 @@ admin:
       label: Pricing
       sold: Adjudged price
     realestates_sellers: Type of sale
-    visits: Visits
+    visits:
+      label: 
+        one: Visit
+        other: Visits
 credit:
   hugolify: a low impact website crafted with <a href="https://www.lawyerify.io" target="_blank" rel="noopener noreferrer" title="« Lawyerify » - lien externe">Lawyerify</a>
 expertises:
