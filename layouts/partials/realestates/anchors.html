@@ -15,6 +15,6 @@
   {{- $len := . | len -}}
   {{- $gallery := i18n "gallery" $len | urlize -}}
   {{- if gt $len 0 }}
-    <p class="see_images"><a href="#{{ $gallery }}">{{ i18n "gallery" $len }}</a></p>
+    <p class="see_images"><a href="#{{ $gallery }}">{{ i18n "gallery.label" $len }}</a></p>
   {{ end -}}
 {{ end }}
