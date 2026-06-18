@@ -1,0 +1,22 @@
+{
+  "color": {
+    "brand": {
+      "default": {
+        "$value": "oklch(26.5% 0.203 269.8)",
+        "$type": "color"
+      },
+      "hover": {
+        "$value": "{color.sienna.700}",
+        "$type": "color"
+      },
+      "muted": {
+        "$value": "{color.sienna.100}",
+        "$type": "color"
+      },
+      "strong": {
+        "$value": "{color.sienna.900}",
+        "$type": "color"
+      }
+    }
+  }
+}
