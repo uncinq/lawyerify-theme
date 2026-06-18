@@ -1,3 +1,5 @@
-<article class="item publication" itemscope itemtype="http://schema.org/Periodical"{{ partial "func/SetAnim" (dict "element" "item") }}>
+<article class="item publication" itemscope itemtype="http://schema.org/Periodical" {{- partial "func/SetAnim.html" (dict "element" "item") }}>
   {{ partial "publications/item/content" . }}
+  {{ partial "publications/item/press" . }}
+  {{ partial "publications/item/metas" . }}
 </article>

@@ -1,13 +1,15 @@
-{{- $persons := partial "func/GetTaxonomyPageBySlug" (dict 
-  "section" "persons"
+{{- $section := "persons" }}
+{{- $persons := partial "func/GetTaxonomyPageBySlug" (dict
+  "section" $section
   "taxonomy" "persons_places"
   "slug" .File.TranslationBaseName) -}}
-{{- if $persons }}
-  <section class="places-persons">
-    <div class="container">
-      <h2>{{ i18n "places.discover_persons" (dict "Title" (.Title | lower)) }}</h2>
-      {{- $paginator := partial "func/GetPersonsOrderByStatutes" $persons -}}
-      {{ partial "persons/items" (dict "pages" $paginator) }}
-    </div>
-  </section>
-{{ end -}}
+{{- $persons = partial "func/GetPersonsOrderByStatutes" $persons }}
+
+{{- with $persons }}
+  {{- $title := partial "func/PrepareHTML.html" $.Title }}
+  {{- partial "commons/related.html" (dict
+    "section" $section
+    "pages" .
+    "title" (i18n "places.discover_persons" (dict "Title" ($title | lower)))
+  ) }}
+{{- end }}
