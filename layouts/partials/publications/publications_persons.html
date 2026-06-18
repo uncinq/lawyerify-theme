@@ -5,11 +5,6 @@
 {{- range .GetTerms "publications_persons" -}}
   {{- $persons = $persons | append . -}}
 {{- end -}}
-<!-- LEGACY -->
-{{- range .GetTerms "publications_concerned" -}}
-  {{- $persons = $persons | append . -}}
-{{- end -}}
-<!-- / LEGACY -->
 {{- $pages = $persons -}}
 
 <!-- Order people by status importance if more 1 people -->

@@ -6,7 +6,7 @@ Edit `config/_default/module.yaml` to install the `lawyerify-theme` module:
 
 ```yml
 imports:
-  - path: github.com/uncinq/lawyerify-theme
+  - path: github.com/uncinq/lawyerify-theme/v2
 ```
 
 ## Documentation
