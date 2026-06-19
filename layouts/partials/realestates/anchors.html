@@ -1,20 +1,24 @@
-{{ with .Params.address }}
+{{ if or .Params.address .Params.documents .Params.gallery }}
+<ul class="list list-anchors">
+{{- with .Params.address }}
   {{- if or .location .coordinates }}
     {{- $location := i18n "realestates.location" | urlize -}}
-    <p class="see_location"><a href="#{{ $location }}">{{ i18n "realestates.location" }}</a></p>
-  {{ end -}}
-{{ end }}
-{{ with .Params.documents }}
+    <li><a href="#{{ $location }}">{{ i18n "realestates.location" }}</a></li>
+  {{- end }}
+{{- end }}
+{{- with .Params.documents }}
   {{- $len := . | len -}}
   {{- $document := i18n "document" $len | urlize -}}
   {{- if gt $len 0 }}
-    <p class="see_documents"><a href="#{{ $document }}">{{ i18n "document" $len }}</a></p>
-  {{ end -}}
-{{ end }}
-{{ with .Params.gallery }}
+    <li><a href="#{{ $document }}">{{ i18n "document" $len }}</a></li>
+  {{- end }}
+{{- end }}
+{{- with .Params.gallery }}
   {{- $len := . | len -}}
   {{- $gallery := i18n "gallery" $len | urlize -}}
   {{- if gt $len 0 }}
-    <p class="see_images"><a href="#{{ $gallery }}">{{ i18n "gallery.label" $len }}</a></p>
-  {{ end -}}
-{{ end }}
+    <li><a href="#{{ $gallery }}">{{ i18n "gallery.label" $len }}</a></li>
+  {{- end }}
+{{- end }}
+</ul>
+{{- end }}

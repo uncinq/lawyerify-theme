@@ -1,0 +1,18 @@
+{
+  "person": {
+    "border": {
+      "radius": {
+        "$value": "{radius.none}",
+        "$type": "dimension"
+      }
+    },
+    "media": {
+      "border": {
+        "radius": {
+          "$value": "{radius.none}",
+          "$type": "dimension"
+        }
+      }
+    }
+  }
+}

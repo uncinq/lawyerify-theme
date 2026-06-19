@@ -10,6 +10,8 @@ module:
       target: static
 
 params:
+
+  # Admin
   admin:
     fields:
       contact:
@@ -23,3 +25,16 @@ params:
         - price_sold
         - visits
         - date_sale
+
+  # Front
+  expertises:
+    _merge: deep
+    thumbnail:
+      _merge: deep
+      desktop: '636x273'
+  persons:
+    _merge: deep
+    thumbnail:
+      _merge: deep
+      desktop: "306x372"
+      mobile: "300x365"

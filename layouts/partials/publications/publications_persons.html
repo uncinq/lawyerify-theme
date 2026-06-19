@@ -16,11 +16,6 @@
   {{- $pages = slice -}}
   {{- range partial "func/GetPersonsOrderByStatutes" $realPersons -}}
     {{- $taxonomy := "publications_persons" -}}
-    <!-- LEGACY -->
-    {{ with site.Taxonomies.publications_concerned }}
-      {{- $taxonomy = "publications_concerned" -}}
-    {{ end }}
-    <!-- / LEGACY -->
     <!-- Reset with section to keep context -->
     {{ with .File }}
       {{- $pages = $pages | append (site.GetPage (printf "/%s/%s" $taxonomy .TranslationBaseName)) -}}
@@ -32,6 +27,5 @@
 {{ range $pages }}
   {{ partial "commons/person" (dict 
     "person" . 
-    "show_btn" false 
     ) }}
 {{ end }}

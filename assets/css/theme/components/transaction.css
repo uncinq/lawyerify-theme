@@ -1,0 +1,12 @@
+/* theme/components/transaction.css */
+@layer components {
+  .transaction {
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: 1fr;
+
+    @media (--tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

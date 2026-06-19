@@ -1,0 +1,7 @@
+/* theme/components/person.css */
+@layer components {
+  .person {
+    --item-border-radius: var(--person-border-radius);
+    --item-media-border-radius: var(--person-media-border-radius);
+  }
+}

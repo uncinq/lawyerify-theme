@@ -1,0 +1,9 @@
+/* Do not edit directly, this file was auto-generated. */
+
+/* theme/components/person.css */
+@layer tokens {
+  :root {
+    --person-border-radius: var(--radius-none);
+    --person-media-border-radius: var(--radius-none);
+  }
+}
