@@ -12,6 +12,10 @@
           "$value": "{radius.none}",
           "$type": "dimension"
         }
+      },
+      "maxWidth": {
+        "$value": "100%",
+        "$type": "dimension"
       }
     }
   }
