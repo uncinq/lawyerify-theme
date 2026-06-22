@@ -26,7 +26,7 @@ params:
         - visits
         - date_sale
 
-  # Front
+  # Image
   persons:
     _merge: deep
     thumbnail:
