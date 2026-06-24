@@ -2,5 +2,5 @@
 {{- $hasPersons := partial "func/HasTaxonomyAvailable" (dict "section" "realestates" "taxonomy" "realestates_persons") -}}
 {{- $hasSellers := partial "func/HasTaxonomyAvailable" (dict "section" "realestates" "taxonomy" "realestates_sellers") -}}
 {{- if or $hasCategories $hasPersons $hasSellers }}
-  <button class="btn btn-filter" type="button" data-bs-toggle="offcanvas" data-bs-target="#realestatesFilters" aria-controls="realestatesFilters">{{ i18n "filter" }}</button>
+  {{ partial "commons/filters/button" . }}
 {{ end -}}

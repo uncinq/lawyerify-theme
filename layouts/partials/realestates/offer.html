@@ -1,11 +1,13 @@
-<div class="offer">
-  {{- partial "realestates/reference" . -}}
-  {{- $realestates_categories := "realestates/realestates_categories.html" -}}
-  {{- if templates.Exists ( printf "partials/%s" $realestates_categories ) -}}
-    {{- partial $realestates_categories . -}}
-  {{- end -}}
-  {{- partial "realestates/pricing_sold" . -}}
-  {{- partial "realestates/pricing" . -}}
-  {{- partial "realestates/address" . -}}
-  {{- partial "realestates/anchors" . -}}
+<div class="card offer">
+  <div class="content">
+    {{- partial "realestates/reference" . -}}
+    {{- $realestates_categories := "realestates/realestates_categories.html" -}}
+    {{- if templates.Exists ( printf "partials/%s" $realestates_categories ) -}}
+      {{- partial $realestates_categories . -}}
+    {{- end -}}
+    {{- partial "realestates/pricing_sold" . -}}
+    {{- partial "realestates/pricing" . -}}
+    {{- partial "realestates/address" . -}}
+    {{- partial "realestates/anchors" . -}}
+  </div>
 </div>

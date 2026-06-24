@@ -1,0 +1,15 @@
+/* Do not edit directly, this file was auto-generated. */
+
+/* theme/semantic/color.css */
+@layer tokens {
+  :root {
+    --color-accent: oklch(26.5% 0.203 269.8);
+    --color-accent-hover: oklch(22% 0.18 270);
+    --color-accent-muted: oklch(88% 0.05 270);
+    --color-accent-strong: oklch(13% 0.10 270);
+    --color-brand: oklch(26.5% 0.203 269.8);
+    --color-brand-hover: oklch(22% 0.18 270);
+    --color-brand-muted: oklch(88% 0.05 270);
+    --color-brand-strong: oklch(13% 0.10 270);
+  }
+}

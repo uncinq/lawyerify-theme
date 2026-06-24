@@ -2,8 +2,5 @@
 {{- $hasPersons := partial "func/HasTaxonomyAvailable" (dict "section" "realestates" "taxonomy" "realestates_persons") -}}
 {{- $hasSellers := partial "func/HasTaxonomyAvailable" (dict "section" "realestates" "taxonomy" "realestates_sellers") -}}
 {{ if or $hasCategories $hasPersons $hasSellers }}
-  <div class="filters offcanvas" tabindex="-1" id="realestatesFilters" aria-labelledby="realestatesFiltersLabel">
-    {{ partial "realestates/filters/header" . }}
-    {{ partial "realestates/filters/content" . }}
-  </div>
+  {{ partial "commons/filters.html" (dict "context" . "section" "realestates") }}
 {{ end }}

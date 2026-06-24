@@ -1,0 +1,43 @@
+/* theme/components/sale.css */
+@layer components {
+  .sale {
+    > div {
+      background-color: var(--card-color-background);
+      border-radius: var(--card-border-radius);
+      padding: var(--card-gap);
+    }
+    p {
+      margin-block: 0;
+    }
+    .date {
+      font-weight: var(--font-weight-bold);
+      & + p {
+        font-size: var(--font-size-small);
+      }
+    }
+    .seller {
+      margin-block-start: var(--card-gap);
+    }
+    p + p,
+    address {
+      font-size: var(--font-size-small);
+    }
+    .direction {
+      --icon-size: var(--font-size-2xs);
+      font-size: var(--font-size-2xs);
+    }
+  }
+}
+
+/* 
+    address
+        align-items: flex-start
+        font-size: $small-font-size
+    .direction
+        &:hover
+            text-decoration: underline
+
+        @if variable-exists(bootstrap-icons-map)
+            &::before
+                @include icon("arrow-right")
+                margin-right: .5em */

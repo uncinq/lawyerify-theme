@@ -1,0 +1,17 @@
+.persons
+    --bs-gutter-y: calc(#{$global-spacing} / 2)
+    @extend .row 
+    @extend .row-cols-1
+    @extend .row-cols-md-3
+    @extend .row-cols-lg-4
+    @include media-breakpoint-up(md)
+        --bs-gutter-y: #{$global-spacing}
+    section:not(:last-child) .heading + &
+        @include margin-bottom($global-spacing)
+    & + nav
+        @include margin-top($global-spacing)
+
+    .person
+        .media
+            --bs-aspect-ratio: 121.7%
+            border-radius: 0

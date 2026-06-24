@@ -12,10 +12,10 @@ admin:
         one: Responsible person
         other: Responsible persons
     realestates_sellers:
-      _description: All types of sales
+      _description: All organisators
       label: 
-        one: Type of sales
-        other: Types of sales
+        one: Organisator
+        other: Organisators
   fields:
     places_items: Offices
     place: Office
