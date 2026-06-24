@@ -16,10 +16,10 @@ admin:
         one: Responsable
         other: Responsables
     realestates_sellers:
-      _description: Tous les types de vente
+      _description: Tous les organisateurs
       label:
-        one: Type de vente
-        other: Types de vente
+        one: Organisateur
+        other: Organisateurs
   fields:
     places_items: Cabinets
     place: Cabinet
@@ -70,11 +70,7 @@ realestates_persons:
     one: Personne en charge
     other: Personnes en charge
 realestates_sellers:
-  all: Tous les types de vente
-  discover: Découvrir type de vente
-  latest: Derniers types de vente
-  more: Découvrir plus types de vente
   title:
-    one: Type de vente
-    other: Types de vente
+    one: Organisateur
+    other: Organisateurs
 with: Avec {{ .Persons }}
