@@ -15,16 +15,18 @@ params:
   admin:
     fields:
       contact:
-        - email
-        - phone
-        - fax
-        - socials
+        fields:
+          - email
+          - phone
+          - fax
+          - socials
       offer:
-        - is_sold
-        - price
-        - price_sold
-        - visits
-        - date_sale
+        fields:
+          - is_sold
+          - price
+          - price_sold
+          - visits
+          - date_sale
 
   # Image
   persons:
