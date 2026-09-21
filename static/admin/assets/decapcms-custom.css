@@ -1,0 +1,4 @@
+aside [href='#/collections/places'] span::before {
+  content: '\F87D';
+}
+
