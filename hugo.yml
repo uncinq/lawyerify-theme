@@ -13,6 +13,7 @@ params:
 
   # Admin
   admin:
+    title: "Lawyerify CMS"
     
     collections:
       persons:
