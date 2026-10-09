@@ -7,7 +7,7 @@
       <div>
         {{ with .date_sale }}
           <p class="date">{{ . | time.Format ":date_full" }}</p>
-          <p>{{ i18n "to" }} {{ partial "commons/time.html" (dict "date" . "format" ":time_short" "itemprop" false) }}
+          <p>{{ i18n "to" }} {{ partial "commons/time.html" (dict "date" . "format" ":time_short") }}
         {{ end }}
         {{ range $context.GetTerms "realestates_sellers" }}
           <div class="seller">

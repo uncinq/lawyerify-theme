@@ -1,7 +1,7 @@
 <div class="offer">
   {{ partial "realestates/item/reference" . }}
   {{ with .Params.offer }}
-    <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+    <div>
       {{ if not .sold }}
         {{ partial "realestates/item/pricing" . }}
       {{ else }}

@@ -7,10 +7,10 @@
         <li>
           {{ with .date_from }}
             <p class="date">{{ . | time.Format ":date_full" }}</p>
-            <p>{{ i18n "from" }} {{ partial "commons/time.html" (dict "date" . "format" ":time_short" "itemprop" false) }}
+            <p>{{ i18n "from" }} {{ partial "commons/time.html" (dict "date" . "format" ":time_short") }}
           {{ end }}
           {{ with .date_to }}
-            {{ i18n "to"| lower }} {{ partial "commons/time.html" (dict "date" . "format" ":time_short" "itemprop" false) }}
+            {{ i18n "to"| lower }} {{ partial "commons/time.html" (dict "date" . "format" ":time_short") }}
           {{ end }}
           </p>
         </li>
