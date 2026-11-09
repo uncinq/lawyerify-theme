@@ -1,7 +1,7 @@
 <div class="contact">
   <h3>{{ i18n "contact.title"}}</h3>
   {{- $realestates_persons := "realestates/realestates_persons.html" -}}
-  {{- if templates.Exists ( printf "partials/%s" $realestates_persons ) -}}
+  {{- if templates.Exists ( printf "_partials/%s" $realestates_persons ) -}}
     {{ partial $realestates_persons . }}
   {{ end -}}
 </div>
