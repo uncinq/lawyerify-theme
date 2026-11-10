@@ -24,6 +24,10 @@ admin:
       label: Pricing
       sold: Adjudged price
     realestates_sellers: Type of sale
+    schema_type:
+      options:
+        LegalService: "Law firm, legal service"
+        Notary: "Notary"
     visits:
       label: 
         one: Visit

@@ -1,0 +1,16 @@
+{{/* GetSchemaTypesTheme
+     The schema.org types of the legal professions, added to the generic ones
+     of hugolify-theme, see func/GetSchemaTypes.html there.
+
+     Both descend from LocalBusiness. A law firm is a LegalService: schema.org
+     deprecates Attorney in its favour.
+*/}}
+{{- $localBusiness := slice
+  "LegalService"
+  "Notary"
+-}}
+
+{{- return (dict
+  "organization" $localBusiness
+  "local_business" $localBusiness
+) -}}

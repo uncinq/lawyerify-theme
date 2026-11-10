@@ -28,6 +28,10 @@ admin:
       label: Prix de mise en vente
       sold: Prix adjugé
     realestates_sellers: Type de vente
+    schema_type:
+      options:
+        LegalService: "Cabinet d’avocats, service juridique"
+        Notary: "Notaire, office notarial"
     visits:
       label: 
         one: Visite
