@@ -20,6 +20,15 @@ imports:
   - path: github.com/uncinq/hugolify-theme
 ```
 
+## Structured data
+
+The theme adds the schema.org types of the legal professions to the generic ones of hugolify-theme, through `layouts/_partials/func/GetSchemaTypesTheme.html`:
+
+- `LegalService`, a law firm: schema.org deprecates `Attorney` in its favour
+- `Notary`
+
+Both are local businesses. Hugolify admin offers them for the organization, under *Config › Structured data*, and for each place. A site that defines its own hook replaces this list, see [Structured data](https://www.hugolify.io/docs/customization/structured-data/#types).
+
 ## Documentation
 
 https://www.hugolify.io/docs/
