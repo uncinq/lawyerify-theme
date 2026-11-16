@@ -42,10 +42,16 @@ expertises:
   all: Toutes les expertises du cabinet
   discover_persons: Nos experts en {{ .Title }}
 persons:
-  all: Toutes les personnes du cabinet
+  all: Tous les avocats du cabinet
+  discover: Découvrir l'avocat
   discover_occupation:
-    consonant: Découvir le {{ .Occupation }}
-    vowel: Découvir l’{{ .Occupation }}
+    consonant: Découvrir le {{ .Occupation }}
+    vowel: Découvrir l’{{ .Occupation }}
+  latest: Derniers avocats
+  more: Découvrir plus d'avocats
+  title:
+    one: Avocat
+    other: Avocats
 persons_places:
   title:
     one: Cabinet

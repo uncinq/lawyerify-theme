@@ -38,10 +38,16 @@ expertises:
   all: All the firm’s expertise
   discover_persons: Our {{ .Title }} experts
 persons:
-  all: Everyone in the firm
+  all: All lawyers in the firm
+  discover: Discover the lawyer
   discover_occupation:
     consonant: Discover the {{ .Occupation }}
     vowel: Discover the {{ .Occupation }}
+  latest: Latest lawyers
+  more: Discover more lawyers
+  title:
+    one: Lawyer
+    other: Lawyers
 persons_places:
   title:
     one: Office
